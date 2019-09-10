@@ -14,7 +14,7 @@
 
 - 项目必须为maven项目
 
-- 前提用`docker-compose`构建服务器,步骤如下
+- 前提用`docker-compose`构建服务器,步骤如下(注意要先关闭SELinux：vim /etc/sysconfig/selinux , SELINUX=enforcing 改为 SELINUX=disabled 重启)
 
     - 创建宿主机挂载目录：`mkdir -p /data/docker/ci/nexus /data/docker/ci/jenkins/lib /data/docker/ci/jenkins/home /data/docker/ci/sonarqube /data/docker/ci/postgresql /data/docker/ci/gatling/results`
 
