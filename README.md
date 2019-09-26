@@ -118,7 +118,8 @@
 
       jenkins:
 
-        image: wine6823/jenkins:1.1
+        #image: wine6823/jenkins:1.1
+        image: jenkins/jenkins:lts
 
         restart: always
 
