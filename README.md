@@ -145,6 +145,12 @@
 
           - /data/docker/ci/jenkins/home:/var/jenkins_home
 
+          - /etc/sysconfig/docker:/etc/sysconfig/docker
+
+          - /usr/bin/docker-current:/usr/bin/docker-current
+
+          - /usr/lib/x86_64-linux-gnu/libcrypto.so.10:/usr/lib64/libcrypto.so.10
+
         depends_on:
 
           - nexus
