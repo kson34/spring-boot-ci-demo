@@ -120,7 +120,8 @@
 
         #image: wine6823/jenkins:1.1
         image: jenkins/jenkins:lts
-
+        privileged: true
+        user: root
         restart: always
 
         ports:
